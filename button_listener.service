@@ -1,0 +1,9 @@
+[Unit]
+Description=Dash button listener script
+
+[Service]
+User=root
+ExecStart=/usr/bin/python /home/pi/button_listener.py &
+
+[Install]
+WantedBy=multi-user.target
